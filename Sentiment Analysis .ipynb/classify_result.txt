@@ -1,0 +1,15 @@
+No of Positive Instance: 360 
+No of Negative Instance: 201 
+No of Neutral Instance: 336 
+
+Example of positive instances 
+1. i am seeing avengers endgame tonight pray for me
+2. dellemc UDUDellEMCAvengers Attending the Avengers Endgame premier Yeees
+
+ Example of negative instances 
+1. STOP BEING ASSHOLES AND FUCKING UPLOADING CLIPS OF FUCKING AVENGERS ENDGAME TO YOUTUBE YOU DICKWADS I just fucking
+2. THE STUPIDEST FUCKING THING YOU GUYS EVER DID WAS ANNOUNCE NEW MOVIES AFTER ENDGAME
+
+ Example of neutral instances 
+1. Stuart little dies at the end of Avengers endgame
+2. At the end of Endgame the Avengers dig up Thanos s tweets from and that basically ends him Endgame

@@ -1,0 +1,19 @@
+In this project, I try to analyze the tweets related to a trending topic - Avengers Endgame. 
+The project consists of four phases namely - collecting resources, clustering the users, classifying the tweets and summarizing the results.
+The working of the project is described below:
+
+1.Collecting tweets: collect.py
+In this file, I am collecting tweets from a week back to current day with keywords "#AvengersEndgame OR Avengers Endgame OR MarvelStudios' as well as the twitter id of users who tweeted. The data collected is stored in 'raw_tweets.pkl' which stores the whole tweet data (list of dictionaries) and 'tweet_text.pkl' stores only the tweet 'text'. 
+For clustering purpose we have also collected the ids of the friends of each user stored in friends.pkl
+The twitter id of users who tweeted about the above keyword are stored in 'ids.pkl'
+Considering the rate limit of twitterAPI I have collected around 980 tweets and twitter ids.
+
+2.Clustering data: cluster.py
+In this file, the objective is to find the similarity among users and cluster them into communities. In order to detect communities, we need to find the friends of each user. This data is stored in a pickle file 'friends.pkl'. Firstly, a graph is created having nodes as user ids. In order to perform clustering, I used Girvan-Newmann algorithm to find the communities. I limit the cluster size as 10. The output is stored in 'cluster_results.txt'
+
+3.Classifying data: classify.py
+In this file, the objective is to classify the tweets into positive or negative or neutral based on the available lexicon(vader-lexicon).I have used nltk library's SentimentIntensityAnalyzer for analyzing the sentiment of individual tweets.The library internally converts the text into tokens and maps the output into 4 values compound,positive,negative, neutral values based on the occurence of each word in the given tweet and its corrosponding label in the library. I classify highly positive to neutral tweets as positive , highly negative to neutral tweets as negative and remaining as neutral tweets.The results of the classification and top 2 tweets of each instance are stored in 'classify_results.txt'. All the classified tweets are stored in all_classified_tweets.txt
+# The accuracy for classifying sarcasm (series of positive set of words but in negative context) is low.
+
+4.Summary: summarize.py
+In this file the objective is to summarize the data in a user readable format. It is used to create a file 'summary.txt' with data from all other phases of the project.
