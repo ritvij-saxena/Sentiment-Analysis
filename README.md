@@ -1,4 +1,4 @@
-#Sentinment Analysis Project
+**Sentinment Analysis Project
 
 The main goals are to:
 1. **Collect** raw data from some online social networking site (Twitter, Facebook, Reddit, Instagram, etc.)
