@@ -4,7 +4,7 @@ The main goals are to:
 1. **Collect** raw data from some online social networking site (Twitter, Facebook, Reddit, Instagram, etc.)
 2. Perform **community detection** to cluster users into communities.
 3. Perform **supervised classification** to annotate messages and/or users according to some criterion. Manual Labelling can be done
-4. Analyze the results and **summarize** your conclusions.
+4. Analyze the results and **summarize** the conclusions.
 
 - `collect.py`: This file collects raw data from twitter. This is data used for analysis. 
 - `cluster.py`: This file reads the data collected in the previous step and uses Girvan Newman community detection algorithm to cluster users into communities.
